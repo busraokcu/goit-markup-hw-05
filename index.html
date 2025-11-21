@@ -418,6 +418,29 @@
             </li>
           </ul>
         </section>
+        <div class="backdrop is-open">
+          
+          <form name="contact-box" class="contact-box">
+               <div class="form-content">
+         <div class="close-tag">
+              <svg class="icon icon-close">
+                <use xlink:href="symbol-defs.svg#icon-close"></use>
+              </svg>
+          </div>
+              <h4>Leave your contacts and we will call you back</h4>
+              <label class="form-label" for="user-name"> Name </label>
+              <svg class="icon icon-profile">
+                <use xlink:href="symbol-defs.svg#icon-profile"></use>
+              </svg>
+              <input type="text" name="user-name" class="input-field" />
+
+              <label class="form-label" for="phone-number"> Phone </label>
+              <input type="tel" name="phone-number" class="input-field" />
+              <label class="form-label" for="user-mail">Email</label>
+              <input type="email" name="user-mail" class="input-field" />
+            </div>
+          </form>
+        </div>
       </main>
       <footer class="page-footer">
         <div class="footerblock">
@@ -456,23 +479,22 @@
         </div>
 
         <form class="form-box" name="subscribe-form">
-          <label class="mail-box">
-            Subscribe
-            <div>
-              <input
-                class="mail-input"
-                name="user-email"
-                type="email"
-                placeholder="Email"
-              />
-              <button class="subscribe-btn" type="submit">
-                Subscribe
-                <svg class="icon icon-send">
-                  <use xlink:href="symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </label>
+          <label class="mail-box" for="user-email">Subscribe</label>
+          <div class="input-bar">
+            <input
+              class="mail-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+              placeholder="Email"
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="icon icon-send">
+                <use xlink:href="symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </footer>
     </div>
