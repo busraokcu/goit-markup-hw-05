@@ -418,8 +418,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 80px;
+  padding-top: 72px;
   position: relative;
 }
 .is-open {
@@ -427,13 +427,15 @@ header {
 }
 .contact-box {
   border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.close-tag .icon  {
+
+.close-tag {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -443,10 +445,17 @@ header {
   top: 24px;
   right: 24px;
 }
+.icon-close{
+  width: 8px;
+  height: 8px;
+  position:absolute;
+  top:8px;
+  left: 8px;
+
+}
 
 .form-content.icon {
   position: absolute;
-
 }
 form{
   border: 1px solid aquamarine;
@@ -456,20 +465,19 @@ form{
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
- 
 }
-.input-field:active{
+.input-field:focus{
   border: #404bbf;
 }
 .input-wrap{
-  border: 1px solid forestgreen; 
   position: relative;
 }
 .icon-profile{
   position: absolute;
-  top:50%;
+  top:8px;
   left: 16px;
+  transform: translateY(-50%);
 }
 .icon-profile:hover{
-color: #404bbf;
+fill: #404bbf;
 }
