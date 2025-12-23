@@ -417,8 +417,8 @@ header {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 80px;
+ padding-left: 24px;
   padding-top: 72px;
   position: relative;
 }
@@ -427,7 +427,6 @@ header {
 }
 .contact-box {
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -441,9 +440,9 @@ header {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  position:absolute;
+  top: 32px;
+  right: 32px;
 }
 .icon-close{
   width: 8px;
@@ -453,31 +452,98 @@ header {
   left: 8px;
 
 }
-
+.form-title{
+  margin-bottom: 16px;
+}
 .form-content.icon {
   position: absolute;
 }
-form{
-  border: 1px solid aquamarine;
-}
+
 .input-field{
   width: 360px;
   height: 40px;
+  padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
-.input-field:focus{
-  border: #404bbf;
+.form-content .input-field:focus {
+  border:1px solid #404bbf;
+}
+.form-content .input-field:focus + svg {
+ fill:  #404bbf;
 }
 .input-wrap{
   position: relative;
 }
 .icon-profile{
   position: absolute;
-  top:8px;
+  top:50%;
   left: 16px;
   transform: translateY(-50%);
+  fill:#2E2F42;
+  cursor: pointer;
 }
-.icon-profile:hover{
-fill: #404bbf;
+.form-label{
+color: rgba(142, 143, 153, 1);
+}
+.comment-input{
+  width: 360px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  padding-top: 8px;
+  padding-left: 16px;
+  color: rgba(142, 143, 153, 1);
+}
+.send-btn{
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border-style: none;
+  color:#ffffff ;
+  background-color:#4D5AE5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  margin-left: 119px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.checkbox{
+  width: 360px;
+  height: 16px;
+  text-align:justify;
+  font-size: 12px;
+  color: rgba(142, 143, 153, 1);
+  margin-top: 16px;
+  margin-bottom: 24px;
+  line-height: 0.85;
+  letter-spacing: 0.48px;
+}
+.checkbox-btn{
+  width: 16px;
+  height: 16px;
+ cursor: pointer;
+}
+ 
+ 
+.icon-phone{
+  position: absolute;
+  top:50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2E2F42;
+  cursor: pointer;
+}
+.icon-email{
+   position: absolute;
+  top:50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2E2F42;
+  cursor: pointer;
+
+}
+.input-wrap .icon{
+  width: 18px;
+  height: 24px;
 }
